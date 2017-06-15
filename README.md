@@ -2,12 +2,12 @@
 
 >This is a markdown practice
 
-###This is a heading three
+### This is a heading three
 
 -Oh yessss
 -much skill
 
-###Code Example
+### Code Example
 
 ```ruby
 def my_great_method
