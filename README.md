@@ -1,24 +1,20 @@
 # DevCamp_Portfolio
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+>This is a markdown practice
 
-Things you may want to cover:
+###This is a heading three
 
-* Ruby version
+-Oh yessss
+-much skill
 
-* System dependencies
+###Code Example
 
-* Configuration
+```ruby
+def my_great_method
+  puts "here it is"
+end
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```javascript
+alert('Hi there')
+```
