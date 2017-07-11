@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
   resources :portfolios, except: [:show]
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
-<<<<<<< HEAD
   
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
@@ -13,13 +13,3 @@ Rails.application.routes.draw do
   end
   root to: 'pages#home'
 end
-=======
-
-  get 'about-me', to: 'pages#about'
-  get 'contact', to: 'pages#contact'
-
-  resources :blogs
-  
-  root to: 'pages#home'
-end
->>>>>>> data-feature
