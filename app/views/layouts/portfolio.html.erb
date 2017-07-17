@@ -18,11 +18,8 @@
       <%= login_helper %>
       
     <%= yield %>
-       
-      
+
+    <%= regg_helper("portfolio") %>
     
-    <% if session[:regg] %>
-      <p>Seasons greetings from <%= session[:regg] %></p>
-    <% end %>
   </body>
 </html>

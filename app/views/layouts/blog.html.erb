@@ -19,8 +19,6 @@
       
     <%= yield %>
     
-    <% if session[:regg] %>
-      <p>Seasons greetings from <%= session[:regg] %></p>
-    <% end %>
+    <%= regg_helper("blog") %>
   </body>
 </html>

@@ -7,6 +7,14 @@ module ApplicationHelper
         "<br>".html_safe +
         (link_to "Login", new_user_session_path)
     end
-    
+  end
+  def sample_helper
+    content_tag(:div, "my content", class: "my-class")
+  end
+  def regg_helper(layout_name)
+    if session[:regg]
+      greeting = "Seasons greetings from #{session[:regg]}. You are on the #{layout_name} layout."
+      content_tag(:p, greeting, class: "regg-greeting")
+    end
   end
 end

@@ -10,17 +10,16 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body><p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+  <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
       
-   <%= render 'shared/nav', location: 'top' %>
+    <%= render 'shared/nav', location: 'top' %>
       
-      <%= login_helper %>
+    <%= login_helper %>
       
     <%= yield %>
     
-    <% if session[:regg] %>
-      <p>Seasons greetings from <%= session[:regg] %></p>
-    <% end %>
+    <%= regg_helper("application") %>
   </body>
 </html>
