@@ -4,5 +4,4 @@ class ApplicationController < ActionController::Base
   include SetRegg
   include CurrentUserConcern
   include DefaultPageContent
-  
 end
