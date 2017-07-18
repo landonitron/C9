@@ -18,3 +18,7 @@ module ApplicationHelper
     end
   end
 end
+
+def copyright_generator
+  LandonViewTool::Renderer.copyright 'Landon Graff', 'All rights reserved'
+end
