@@ -11,13 +11,13 @@ module ApplicationHelper
 
   def regg_helper(layout_name)
     if session[:regg]
-      greeting = "Thanks for visiting me from #{session[:regg]} and you are on the #{layout_name} layout"
+      greeting = "Thanks for visiting me from #{session[:regg]}, and you are on the #{layout_name} layout"
       content_tag(:p, greeting, class: "regg-greeting")
     end
   end
 
   def copyright_generator
-    DevcampViewTool::Renderer.copyright 'Landon Graff', 'All rights reserved'
+    LandonViewTool::Renderer.copyright 'Landon Graff', 'All rights reserved'
   end
 
   def nav_items
